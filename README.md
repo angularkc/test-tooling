@@ -1,4 +1,6 @@
-# TohBase
+# Tour of Heroes Base Code
+
+This is the base code for Angular Tour Of Heroes to use for upcoming session examples.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
