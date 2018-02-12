@@ -5,10 +5,10 @@ Tests for code based on [AngularKC's Tour of Heroes Base](https://github.com/ang
 ## How to get started
 
 ### Prerequisites
-1. Install [Node](https://nodejs.org)
+1. Install [Node](https://nodejs.org)- make sure you have at least Node 6 (you can use ```node --version``` to check).
 1. Install Angular CLI
    ```bash
-   npm install @angular/cli@latest
+   npm install -g @angular/cli@latest
    ```
 
 ### Clone the repo
@@ -21,6 +21,11 @@ git clone https://github.com/angularkc/test-tooling
 npm install
 ```
 
+### Fire it up
+```bash
+ng serve
+ng test
+```
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
