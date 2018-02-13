@@ -1,15 +1,30 @@
-import { TestBed, inject } from '@angular/core/testing';
-
-import { AuthService } from './auth.service';
+import {TestBed, inject} from '@angular/core/testing';
+import {AuthService} from './auth.service';
 
 describe('AuthService', () => {
+
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [AuthService]
+      imports: [
+      ],
+      providers: [
+        AuthService
+      ]
     });
   });
 
-  it('should be created', inject([AuthService], (service: AuthService) => {
-    expect(service).toBeTruthy();
-  }));
+  describe('login', () => {
+    it('should dispatch Login', inject([AuthService], (service: AuthService) => {
+      expect(true).toBe(false);
+    }));
+  });
+
+  describe('isAuthenticated', () => {
+    it('should return false when token is expired', inject([AuthService], (service: AuthService) => {
+      expect(true).toBe(false);
+    }));
+  });
+
 });
+
+

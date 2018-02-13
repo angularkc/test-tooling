@@ -8,9 +8,7 @@ import {getAccessToken} from '../reducers/auth.reducers';
 export class AuthInterceptor implements HttpInterceptor {
   access_token;
   constructor(private store: Store<any>) {
-    this.store.select(getAccessToken).subscribe(token => {
-      this.access_token = token;
-    });
+    this.store.select(getAccessToken).subscribe(val => this.access_token = val);
   }
 
   intercept = (req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> =>
