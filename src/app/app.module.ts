@@ -17,12 +17,19 @@ import { HeroService } from './hero.service';
 import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 
+import { AuthModule } from './auth/auth.module';
+import {StoreModule} from "@ngrx/store";
+import {auth} from "./auth/reducers/auth.reducers";
+
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    AuthModule.forRoot(),
+    StoreModule.forRoot({auth}),
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
