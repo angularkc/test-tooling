@@ -1,5 +1,6 @@
 import { Action, Store } from '@ngrx/store';
 import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/map';
 
 export class MockStore<T> {
   actions?: Subject<Action>;
