@@ -2,6 +2,8 @@
 
 Tests for code based on [AngularKC's Tour of Heroes Base](https://github.com/angularkc/tour-of-heroes-base) along with examples on how to make running tests awesome.
 
+[Link to slides](https://goo.gl/Q7gMGz)
+
 ## How to get started
 
 ### Prerequisites
